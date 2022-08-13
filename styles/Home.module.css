@@ -32,6 +32,13 @@
     color: #0070f3;
     text-decoration: none;
 }
+.h1 {
+    background: -webkit-linear-gradient(#fbcac9, #8ca6ce);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    font-size: 4.5rem;
+}
 
 .title a:hover,
 .title a:focus,
@@ -43,6 +50,7 @@
     margin: 0;
     line-height: 1.15;
     font-size: 4rem;
+    background: linear-gradient(to right, #fbcac9, #8ca6ce);
 }
 
 .title,
@@ -57,12 +65,14 @@
 }
 
 .code {
-    background: #fafafa;
+    background: linear-gradient(to right, #fbcac9, #8ca6ce);
     border-radius: 5px;
     padding: 0.75rem;
+    margin: 0.75rem;
     font-size: 1.1rem;
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
         DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+    cursor: pointer;
 }
 
 .grid {

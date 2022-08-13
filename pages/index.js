@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
@@ -8,15 +9,19 @@ export default function Home() {
             <Head>
                 <title>infinite-scroll</title>
                 <meta name="description" content="practice windowing" />
-                <link rel="icon" href="/jinah.png" />
+                <link rel="icon" href="/favicon.png" />
             </Head>
             <main className={styles.main}>
-                <h1 className={styles.title}>{`Practice windowing`}</h1>
+                <h1 className={styles.h1}>{`Practice windowing`}</h1>
                 <p className={styles.description}>{`'Infinite-Scroll'`} </p>
-                <code className={styles.code}>
-                    react-infinite-scroll-component
-                </code>
-                <code className={styles.code}>react-window</code>
+                <Link href="/infiniteScrollComponent">
+                    <code className={styles.code}>
+                        react-infinite-scroll-component
+                    </code>
+                </Link>
+                <Link href="/window">
+                    <code className={styles.code}>react-window</code>
+                </Link>
             </main>
 
             <footer className={styles.footer}>
